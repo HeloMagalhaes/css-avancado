@@ -1,0 +1,25 @@
+:root{
+    --cor-padrao: green;
+    --tamanho-de-fonte-padrao: 30px;
+}
+h2{
+    color: var(--cor-padrao, red);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+/* cor que vai pegar caso dê problema na minha variavel fica depois da virgula */
+h3{
+    --cor-padrao: red;
+    --tamanho-de-fonte-padrao: 20px;
+/* variavel local, não preciso do root */
+    color: var(--cor-padrao, red);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+    background-color: var(--cor-padrao) ;
+}
+p{
+    color: var(--cor-padrao, red);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+span{
+    color: var(--cor-padrao, red);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
